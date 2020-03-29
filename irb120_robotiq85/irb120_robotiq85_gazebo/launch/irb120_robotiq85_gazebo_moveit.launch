@@ -31,7 +31,7 @@
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"
   output="screen">
   </node>
-
+  
   <!-- ROS_CONTROL INTERFACE: LAUNCH 1 JOINT STATE and 2 COMMAND CONTROLLERS -->
 
     <!-- load the joint state controller (just reads joint positions) for arm and gripper-->
@@ -40,6 +40,7 @@
 
   <!-- load the IRB120 controller (command interface) -->
   <rosparam file="$(find irb120_robotiq85_gazebo)/config/irb120_arm_controller.yaml" command="load" />
+  <rosparam file="$(find irb120_robotiq85_gazebo)/config/gazebo_ros_params.yaml" command="load" />
   <node name="abb_irb120_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" />
 
   <!-- Fake Calibration for gripper -->

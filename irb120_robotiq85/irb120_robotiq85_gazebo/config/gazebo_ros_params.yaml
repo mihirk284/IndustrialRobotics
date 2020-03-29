@@ -1,0 +1,8 @@
+gazebo_ros_control/pid_gains:
+  joint_1: { p: 1, d: 0, i: 0.0, i_clamp: 1 }
+  joint_2: { p: 3, d: 0, i: 0.0002, i_clamp: 1 }
+  joint_3: { p: 1, d: 0, i: 0.0001, i_clamp: 1 }
+  joint_4: { p: 1, d: 0, i: 0.0001, i_clamp: 1 }
+  joint_5: { p: 1, d: 0, i: 0.0001, i_clamp: 1 }
+  joint_6: { p: 7, d: 0, i: 0.001, i_clamp: 1 }
+  gripper_finger1_joint: { p: 1, d: 0, i: 0.0, i_clamp: 1 }
